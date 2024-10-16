@@ -1,0 +1,645 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.about {
+  margin-top: 15px;
+  flex-direction: column;
+  display: flex;
+  padding-inline: 108px;
+  font-weight: bold;
+}
+
+.collapse .collapse-content {
+  color: #000000;
+  font-weight: normal;
+}
+
+.flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .about {
+    padding-inline: 0;
+  }
+}
+.banner-commun {
+  height: 223px;
+  margin-top: 30px;
+  color: var(--colorWhite);
+  border-radius: 25px;
+  box-shadow: 0px 5px 15px rgb(66, 58, 58);
+}
+
+.banner {
+  background: url("../Assets/BackgroundFilter.png"), url("../Assets/BackgroundHome.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.banner2 {
+  background: url("../Assets/BackgroundFilter.png"), url("../Assets/Background.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.banner h1 {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 1rem;
+  }
+  .banner, .banner2 {
+    height: 111px;
+    margin-top: 0px;
+    background-position: left;
+  }
+  .banner2, .banner, .banner-commun {
+    border-radius: 10px;
+  }
+}
+.logement {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.ficheLogement {
+  display: flex;
+  margin-top: 30px;
+}
+
+.ficheLogement h4 {
+  color: black;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400 !important;
+}
+
+.ficheLogement h1 {
+  color: #FF6060;
+  margin: 0;
+  font-size: 36px;
+}
+
+.div-tags {
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+  padding-bottom: 2px;
+  margin: 10px 20px 0 0;
+  height: 25px;
+  font-size: 14px;
+  background-color: #FF6060;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.div-etoiles {
+  display: flex;
+  gap: 10px;
+  color: #FF6060;
+  width: 167px;
+}
+
+.div-etoiles p {
+  display: flex;
+  text-align: right;
+  font-size: 18px;
+  width: 93px;
+  height: 52px;
+  align-items: center;
+  text-shadow: 0px 0px 5px rgb(180, 166, 166);
+}
+
+.div-etoiles img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-top: 15px;
+  box-shadow: 0px 0px 10px rgb(175, 136, 136);
+}
+
+.div-description {
+  width: 100%;
+}
+
+.stars {
+  display: flex;
+  font-size: 30px;
+  width: 130px;
+  gap: 10px;
+}
+
+.span1 {
+  color: var(--colorRed);
+  text-shadow: 0px 0px 5px rgb(180, 166, 166);
+}
+
+.span2 {
+  color: #E3E3E3;
+}
+
+.collapseLogement {
+  display: flex;
+  gap: 2rem;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.description-content {
+  color: #000000;
+}
+
+.equipements-content {
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .compteurImages {
+    display: none;
+  }
+  .ficheLogement, .collapseLogement {
+    display: block;
+  }
+  .description {
+    margin-bottom: 30px;
+  }
+  .bloc-stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .stars {
+    align-items: center;
+    justify-content: left;
+  }
+  .tags {
+    font-size: 10px;
+  }
+  .div-tags {
+    gap: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .tags {
+    margin-right: 10px;
+  }
+  .div-tags {
+    gap: 0;
+  }
+  .bloc-stars {
+    margin-top: 10px;
+  }
+  .description-content, .equipement-content {
+    font-size: 12px;
+  }
+  .description-header, .equipements-header {
+    font-size: 13px;
+    padding: 8px 0px 8px 20px;
+  }
+  .span1, .span2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 401px) {
+  .stars {
+    font-size: 15px;
+    gap: 5px;
+  }
+  .carrousel-logement img {
+    height: 255px;
+  }
+  .div-description h1 {
+    font-size: 18px;
+  }
+  .div-description h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+  .div-etoiles {
+    align-items: center;
+  }
+  .div-etoiles img {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+  }
+  .div-etoiles p {
+    display: flex;
+    justify-content: right;
+    font-size: 12px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+.fiche-logement {
+  background-color: #FF6060;
+  min-width: 280px;
+  width: 100%;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  transition: 0.3s;
+}
+
+.logements {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  justify-content: center;
+  background: #F7F7F7;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 25px;
+  padding: 50px;
+}
+
+.logements a {
+  text-decoration: none;
+}
+
+.fiche-logement img {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.fiche-logement h3 {
+  height: 65px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin: 0px 20px;
+  color: white;
+  align-items: center;
+  overflow: hidden;
+}
+
+.fiche-logement:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px #473030;
+}
+
+@media (max-width: 926px) {
+  .logements {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .logements {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    background: #FFF;
+    padding: 0;
+    grid-row-gap: 20px;
+  }
+  .fiche-logement {
+    min-width: 200px;
+    height: 255px;
+  }
+  .fiche-logement img {
+    height: 188px;
+  }
+}
+@media (max-width: 400px) {
+  .fiche-logement {
+    width: 100%;
+  }
+  .logements {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    margin-top: 20px;
+    padding: 0;
+  }
+}
+.carousel {
+  width: 100%;
+  height: 415px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.carousel p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 340px;
+  position: relative;
+  color: var(--colorWhite);
+  text-align: center;
+  text-shadow: 0px 0px 5px black;
+}
+
+.classImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 24px #b3b1b1;
+  content: "";
+}
+
+.carousel button {
+  background-color: transparent;
+  border: none;
+  color: var(--colorWhite);
+}
+
+.classChevronLeft {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  cursor: pointer;
+  color: var(--colorWhite);
+  content: "";
+}
+
+.classChevronRight {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  cursor: pointer;
+  color: var(--colorWhite);
+  content: "";
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 255px;
+  }
+  .classChevronLeft {
+    height: 30px;
+  }
+  .classChevronRight {
+    height: 30px;
+    left: calc(100% - 20px);
+  }
+  .carousel p {
+    top: 70%;
+  }
+}
+.collapse {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.visible.collapse ul {
+  color: var(--colorRed);
+  padding: 36px 27px 19px 18px;
+  margin: 0;
+  text-align: justify;
+  list-style-type: none;
+}
+
+.collapse__header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 28px;
+  background-color: var(--colorRed);
+  color: var(--colorWhite);
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.collapse__header span {
+  padding-right: auto;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.chevronValue img {
+  width: 25px;
+  height: 15px;
+}
+
+.visible.collapse {
+  position: relative;
+  top: -10px;
+  font-size: 18px;
+  color: var(--colorRed);
+  background-color: #f7f7f7;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgb(193, 191, 191);
+  z-index: -1;
+}
+
+.equipement-content {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .collapse__header {
+    font-size: 13px;
+    height: 20px;
+  }
+  .visible.collapse ul {
+    font-size: 12px;
+    padding: 23px 7px 5px 11.5px;
+  }
+}
+.error {
+  color: var(--colorRed);
+}
+
+.commun-error {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.error span {
+  font-size: 288px;
+}
+
+.error h4 {
+  font-size: 36px;
+  margin: 30px 0;
+}
+
+.error a {
+  color: var(--colorRed);
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.error p {
+  padding-top: 50px;
+}
+
+@media (min-width: 401px) and (max-width: 550px) {
+  .error span {
+    font-size: 180px;
+  }
+}
+@media (max-width: 400px) {
+  .error {
+    margin: auto 0;
+  }
+  .error span {
+    font-size: 96px;
+  }
+  .error h4 {
+    font-size: 18px;
+  }
+  .error a {
+    font-size: 14px;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 209px;
+  margin-top: 10px;
+  background: black;
+  color: var(--colorWhite);
+  font-size: 24px;
+}
+
+.img_footer {
+  margin: 0 auto;
+}
+
+.img_footer img {
+  height: 60px;
+  width: 163px;
+}
+
+.arr {
+  height: 46px;
+  text-align: center;
+}
+
+.arr p {
+  margin-top: 10px;
+}
+
+@media (max-width: 450px) {
+  .arr p {
+    font-size: 12px;
+  }
+}
+:root {
+  --colorRed: #FF6060;
+  --colorWhite: #fff;
+}
+
+html {
+  overflow: scroll;
+}
+
+body {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  height: 68px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar img {
+  height: 68px;
+  width: auto;
+  margin-top: 10px;
+}
+
+.navbar img:hover {
+  cursor: pointer;
+}
+
+.navbar nav a {
+  display: flex;
+  color: black !important;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 57px;
+  padding: 0px;
+}
+
+.navbar ul li:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 2px rgba(244, 5, 5, 0.418);
+}
+
+@media (max-width: 768px) {
+  .navbar nav a {
+    text-transform: uppercase;
+  }
+  .navbar nav a {
+    font-size: 12px;
+  }
+  .navbar ul {
+    gap: 10px;
+  }
+  .navbar img {
+    height: 45px;
+  }
+  .navbar nav {
+    justify-content: center;
+  }
+}
+.shaping {
+  display: flex;
+  margin: 10px 100px;
+  flex-direction: column;
+  min-height: calc(100vh - 255px);
+}
+
+@media (max-width: 768px) {
+  .shaping {
+    margin-inline: 10px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

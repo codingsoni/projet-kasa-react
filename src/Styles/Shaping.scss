@@ -1,0 +1,11 @@
+.shaping {
+    display: flex;
+    margin: 10px 100px;
+    flex-direction: column;
+    min-height: calc(100vh - 255px);
+}
+
+
+@media (max-width: 768px) {
+    .shaping { margin-inline: 10px; }
+}

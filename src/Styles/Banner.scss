@@ -1,0 +1,47 @@
+.banner-commun {
+    height: 223px;
+    margin-top: 30px;
+    color: var(--colorWhite);
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px rgb(66, 58, 58);
+}
+
+.banner {
+    background: url("../Assets/BackgroundFilter.png"), url("../Assets/BackgroundHome.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    
+}
+
+.banner2 {
+    background: url("../Assets/BackgroundFilter.png"), url("../Assets/Background.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    
+}
+
+.banner h1 {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 1rem;
+    }
+    .banner, .banner2 {
+        height: 111px;
+        margin-top: 0px;
+        background-position: left;
+    }
+    .banner2, .banner, .banner-commun {
+        border-radius: 10px;
+    }
+}
+
