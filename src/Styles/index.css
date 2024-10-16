@@ -489,15 +489,17 @@ body {
 
 .error span {
   font-size: 288px;
+  font-weight: bold;
 }
 
 .error h4 {
   font-size: 36px;
   margin: 30px 0;
+  font-weight: normal;
 }
 
 .error a {
-  color: var(--colorRed);
+  color: black;
   font-size: 18px;
   text-decoration: underline;
 }
